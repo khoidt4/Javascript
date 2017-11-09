@@ -54,3 +54,7 @@ addItem("Mobile 2");
 mobile.forEach(function(item) {
     console.log(item);
 }, this);
+
+tinhtong = sothunhat, sothuhai => {
+    return sothunhat + sothuhai;
+}
