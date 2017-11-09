@@ -55,6 +55,7 @@ mobile.forEach(function(item) {
     console.log(item);
 }, this);
 
-tinhtong = sothunhat, sothuhai => {
+tinhtong = function(sothunhat, sothuhai) {
     return sothunhat + sothuhai;
 }
+console.log(tinhtong(3, 4));
