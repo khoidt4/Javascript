@@ -111,3 +111,16 @@ console.log(point.x);
 console.log(point.ex);
 
 // ES6 function + class
+
+class Project {
+    constructor(name) {
+        this.name = name;
+    }
+    start() {
+        return "Project" + name + "starting";
+    }
+    end() {
+        return "Project" + name + "ending";
+    }
+
+}
