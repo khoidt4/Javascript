@@ -59,3 +59,18 @@ tinhtong = function(sothunhat, sothuhai) {
     return sothunhat + sothuhai;
 }
 console.log(tinhtong(3, 4));
+
+// ES6 arrow function
+
+var tinhnhan = (x, y) => {
+    return x * y;
+}
+console.log(tinhnhan(5, 7));
+
+var tinhtru = (x, y) => {
+    return x - y;
+}
+console.log(tinhtru(5, 2));
+
+var docLogEs6 = () => { console.log("tai lieu"); }
+docLogEs6(); // #document... <html> ….
