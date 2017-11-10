@@ -74,3 +74,22 @@ console.log(tinhtru(5, 2));
 
 var docLogEs6 = () => { console.log("tai lieu"); }
 docLogEs6(); // #document... <html> ….
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+class Developer extends Person {
+    constructor(name, age, ...languages) {
+        super(name, age);
+        this.languages = [...languages];
+    }
+    printLanguages() {
+        for (let lang of this.languages) {
+            console.log(lang);
+        }
+    }
+}
+let me = new Developer("James", 23, "ES5", "ES6");
