@@ -17,7 +17,7 @@ var infoName = { fullName: "Tuan", lastName: "Khoi" };
 console.log(infoName.fullName);
 console.log(infoName.lastName);
 */
-
+/*
 var cars = ["Lamborini", "BMW", "Toyota"];
 
 for (var i = 0; i < cars.length; i++) {
@@ -46,6 +46,7 @@ mobile.forEach(function(element) {
     console.log(element);
 }, this);
 */
+/*
 addItem = item => {
     mobile.push(item);
 }
@@ -94,6 +95,8 @@ class Developer extends Person {
 }
 let me = new Developer("James", 23, "ES5", "ES6");
 
+*/
+/*
 class Point {
     constructor(x, y) {
         this.x = x;
@@ -109,7 +112,7 @@ class PointExtend extends Point {
 let point = new PointExtend(3, 4, 5);
 console.log(point.x);
 console.log(point.ex);
-
+*/
 // ES6 function + class
 
 class Project {
@@ -125,3 +128,50 @@ class Project {
 }
 var project = new Project("Framigia");
 project.start();
+
+class ScrumProject extends Project {
+
+    constructor(name, deadline) {
+
+        super(name);
+
+        this.deadline = deadline;
+
+    }
+
+    info() {
+
+        return this.name + " has deadline at" + this.deadline;
+
+    }
+}
+
+var framgia = new ScrumProject("Framgia", "1-1-2015");
+
+framgia.start(); // "Framgia starting"
+
+framgia.info(); // "Framgia has deadline at 1-1-2015"
+
+//console.log("Khoi");
+
+var arr = [1, 2, 3, 4, 5, 6];
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+}
+
+function printName() {
+
+    var name = "Fram";
+    if (true) {
+        let name = "Gia";
+        console.log(name);
+    }
+    console.log(name);
+}
+
+printName();
+
+var person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+
+console.log(person.firstName + " " + person.lastName);
