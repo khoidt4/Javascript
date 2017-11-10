@@ -117,10 +117,11 @@ class Project {
         this.name = name;
     }
     start() {
-        return "Project" + name + "starting";
+        return "Project" + this.name + "starting";
     }
     end() {
-        return "Project" + name + "ending";
+        return "Project" + this.name + "ending";
     }
-
 }
+var project = new Project("Framigia");
+project.start();
