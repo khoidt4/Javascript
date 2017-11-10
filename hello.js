@@ -93,3 +93,21 @@ class Developer extends Person {
     }
 }
 let me = new Developer("James", 23, "ES5", "ES6");
+
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+class PointExtend extends Point {
+    constructor(x, y, ex) {
+        super(x, y);
+        this.ex = ex;
+    }
+}
+let point = new PointExtend(3, 4, 5);
+console.log(point.x);
+console.log(point.ex);
+
+// ES6 function + class
